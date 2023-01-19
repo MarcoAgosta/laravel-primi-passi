@@ -13,6 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+
 Route::get('/', function () {
-    return view('welcome');
+
+    $esempio=["ciao", "sono", "un", "esempio"];
+
+    return view('home', [
+        "esempio" => $esempio
+    ]);
 });
